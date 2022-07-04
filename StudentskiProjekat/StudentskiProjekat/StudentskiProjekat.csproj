@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFC1A2AB-8123-46A1-9539-837CA385CC6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StudentskiProjekat</RootNamespace>
+    <AssemblyName>StudentskiProjekat</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=3.1.0.0, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.3.1.0\lib\net461\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.3.3\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.21.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.21.6.1\lib\net462\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLayer.cs" />
+    <Compile Include="DTOManager.cs" />
+    <Compile Include="DTOs.cs" />
+    <Compile Include="Entiteti\Autor.cs" />
+    <Compile Include="Entiteti\Clanak.cs" />
+    <Compile Include="Entiteti\Grupni.cs" />
+    <Compile Include="Entiteti\Izvestaj.cs" />
+    <Compile Include="Entiteti\Izvestaji.cs" />
+    <Compile Include="Entiteti\Knjiga.cs" />
+    <Compile Include="Entiteti\KoristiGrup.cs" />
+    <Compile Include="Entiteti\KoristiPoj.cs" />
+    <Compile Include="Entiteti\Literatura.cs" />
+    <Compile Include="Entiteti\Pojedinacni.cs" />
+    <Compile Include="Entiteti\PrakGrup.cs" />
+    <Compile Include="Entiteti\PrakPoj.cs" />
+    <Compile Include="Entiteti\Predmet.cs" />
+    <Compile Include="Entiteti\PredmetNastavnici.cs" />
+    <Compile Include="Entiteti\Projekat.cs" />
+    <Compile Include="Entiteti\Rad.cs" />
+    <Compile Include="Entiteti\SpisakWebG.cs" />
+    <Compile Include="Entiteti\SpisakWebP.cs" />
+    <Compile Include="Entiteti\Student.cs" />
+    <Compile Include="Entiteti\TeorijskiGrup.cs" />
+    <Compile Include="Entiteti\TeorijskiPoj.cs" />
+    <Compile Include="Entiteti\UzeoPG.cs" />
+    <Compile Include="Entiteti\UzeoPP.cs" />
+    <Compile Include="Entiteti\UzeoProjekat.cs" />
+    <Compile Include="Entiteti\UzeoProjekatId.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\AutoriForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\AutoriForma.Designer.cs">
+      <DependentUpon>AutoriForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajAutoraForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajAutoraForma.Designer.cs">
+      <DependentUpon>DodajAutoraForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajClanakForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajClanakForma.Designer.cs">
+      <DependentUpon>DodajClanakForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajIzvestajForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajIzvestajForma.Designer.cs">
+      <DependentUpon>DodajIzvestajForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajKnjiguForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajKnjiguForma.Designer.cs">
+      <DependentUpon>DodajKnjiguForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajPredmetForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajPredmetForma.Designer.cs">
+      <DependentUpon>DodajPredmetForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajProfesoraForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajProfesoraForma.Designer.cs">
+      <DependentUpon>DodajProfesoraForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajRadForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajRadForma.Designer.cs">
+      <DependentUpon>DodajRadForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajStudentaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajStudentaForma.Designer.cs">
+      <DependentUpon>DodajStudentaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajStudentaNaProjForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajStudentaNaProjForma.Designer.cs">
+      <DependentUpon>DodajStudentaNaProjForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajTeoPojForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajTeoPojForma.Designer.cs">
+      <DependentUpon>DodajTeoPojForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajWebForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajWebForma.Designer.cs">
+      <DependentUpon>DodajWebForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\GrupPrakForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\GrupPrakForma.Designer.cs">
+      <DependentUpon>GrupPrakForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzaberiLIteraturu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzaberiLIteraturu.Designer.cs">
+      <DependentUpon>IzaberiLIteraturu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniAutoraForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniAutoraForma.Designer.cs">
+      <DependentUpon>IzmeniAutoraForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniClanakForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniClanakForma.Designer.cs">
+      <DependentUpon>IzmeniClanakForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniGrupPrakForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniGrupPrakForma.Designer.cs">
+      <DependentUpon>IzmeniGrupPrakForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniIzvestajeForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniIzvestajeForma.Designer.cs">
+      <DependentUpon>IzmeniIzvestajeForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniIzvestajForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniIzvestajForma.Designer.cs">
+      <DependentUpon>IzmeniIzvestajForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniKnjiguForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniKnjiguForma.Designer.cs">
+      <DependentUpon>IzmeniKnjiguForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniLiteraturuForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniLiteraturuForma.Designer.cs">
+      <DependentUpon>IzmeniLiteraturuForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniPojPrakForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniPojPrakForma.Designer.cs">
+      <DependentUpon>IzmeniPojPrakForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniPredmetForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniPredmetForma.Designer.cs">
+      <DependentUpon>IzmeniPredmetForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniProfesoraForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniProfesoraForma.Designer.cs">
+      <DependentUpon>IzmeniProfesoraForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniRadForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniRadForma.Designer.cs">
+      <DependentUpon>IzmeniRadForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniSpisakWeba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniSpisakWeba.Designer.cs">
+      <DependentUpon>IzmeniSpisakWeba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniStudentaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniStudentaForma.Designer.cs">
+      <DependentUpon>IzmeniStudentaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniTeoPojForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniTeoPojForma.Designer.cs">
+      <DependentUpon>IzmeniTeoPojForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniTeorijskiGrupForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniTeorijskiGrupForma.Designer.cs">
+      <DependentUpon>IzmeniTeorijskiGrupForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniWebForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniWebForma.Designer.cs">
+      <DependentUpon>IzmeniWebForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\OdaberiKakavProjekat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\OdaberiKakavProjekat.Designer.cs">
+      <DependentUpon>OdaberiKakavProjekat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PojPrakForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PojPrakForma.Designer.cs">
+      <DependentUpon>PojPrakForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ProfesoriForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ProfesoriForma.Designer.cs">
+      <DependentUpon>ProfesoriForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ProjektiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ProjektiForm.Designer.cs">
+      <DependentUpon>ProjektiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\StudentiNaProjektuForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\StudentiNaProjektuForma.Designer.cs">
+      <DependentUpon>StudentiNaProjektuForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\SviPredmeti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\SviPredmeti.Designer.cs">
+      <DependentUpon>SviPredmeti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\SviStudenti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\SviStudenti.Designer.cs">
+      <DependentUpon>SviStudenti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\TeorijskiGrupForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\TeorijskiGrupForma.Designer.cs">
+      <DependentUpon>TeorijskiGrupForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\UzeoPPPGForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\UzeoPPPGForma.Designer.cs">
+      <DependentUpon>UzeoPPPGForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapiranje\AutorMapiranje.cs" />
+    <Compile Include="Mapiranje\ClanakMapiranje.cs" />
+    <Compile Include="Mapiranje\GrupniMapiranje.cs" />
+    <Compile Include="Mapiranje\IzvestajiMapiranje.cs" />
+    <Compile Include="Mapiranje\IzvestajMapiranje.cs" />
+    <Compile Include="Mapiranje\KnjigaMapiranje.cs" />
+    <Compile Include="Mapiranje\KoristiGrupMapiranje.cs" />
+    <Compile Include="Mapiranje\KoristiPojMapiranje.cs" />
+    <Compile Include="Mapiranje\LiteraturaMapiranje.cs" />
+    <Compile Include="Mapiranje\PojedinacniMapiranje.cs" />
+    <Compile Include="Mapiranje\PrakGrupMapiranje.cs" />
+    <Compile Include="Mapiranje\PrakProjMapiranje.cs" />
+    <Compile Include="Mapiranje\PredmetMapiranje.cs" />
+    <Compile Include="Mapiranje\PredmetNastavniciMapiranja.cs" />
+    <Compile Include="Mapiranje\ProjekatMapiranje.cs" />
+    <Compile Include="Mapiranje\RadMapiranje.cs" />
+    <Compile Include="Mapiranje\SpisakWebGMapiranje.cs" />
+    <Compile Include="Mapiranje\SpisakWebPMapiranje.cs" />
+    <Compile Include="Mapiranje\StudentMapiranje.cs" />
+    <Compile Include="Mapiranje\TeorijskiGrupMapiranje.cs" />
+    <Compile Include="Mapiranje\TeorijskiPojMapiranje.cs" />
+    <Compile Include="Mapiranje\UzeoPGMapiranje.cs" />
+    <Compile Include="Mapiranje\UzeoPPMapiranje.cs" />
+    <Compile Include="Mapiranje\UzeoProjekatMapiranje.cs" />
+    <Compile Include="PocetnaStrana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PocetnaStrana.Designer.cs">
+      <DependentUpon>PocetnaStrana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\AutoriForma.resx">
+      <DependentUpon>AutoriForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajAutoraForma.resx">
+      <DependentUpon>DodajAutoraForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajClanakForma.resx">
+      <DependentUpon>DodajClanakForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajIzvestajForma.resx">
+      <DependentUpon>DodajIzvestajForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajKnjiguForma.resx">
+      <DependentUpon>DodajKnjiguForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajPredmetForma.resx">
+      <DependentUpon>DodajPredmetForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajProfesoraForma.resx">
+      <DependentUpon>DodajProfesoraForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajRadForma.resx">
+      <DependentUpon>DodajRadForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajStudentaForma.resx">
+      <DependentUpon>DodajStudentaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajStudentaNaProjForma.resx">
+      <DependentUpon>DodajStudentaNaProjForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajTeoPojForma.resx">
+      <DependentUpon>DodajTeoPojForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajWebForma.resx">
+      <DependentUpon>DodajWebForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\GrupPrakForma.resx">
+      <DependentUpon>GrupPrakForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzaberiLIteraturu.resx">
+      <DependentUpon>IzaberiLIteraturu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniAutoraForma.resx">
+      <DependentUpon>IzmeniAutoraForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniClanakForma.resx">
+      <DependentUpon>IzmeniClanakForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniGrupPrakForma.resx">
+      <DependentUpon>IzmeniGrupPrakForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniIzvestajeForma.resx">
+      <DependentUpon>IzmeniIzvestajeForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniIzvestajForma.resx">
+      <DependentUpon>IzmeniIzvestajForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniKnjiguForma.resx">
+      <DependentUpon>IzmeniKnjiguForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniLiteraturuForma.resx">
+      <DependentUpon>IzmeniLiteraturuForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniPojPrakForma.resx">
+      <DependentUpon>IzmeniPojPrakForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniPredmetForma.resx">
+      <DependentUpon>IzmeniPredmetForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniProfesoraForma.resx">
+      <DependentUpon>IzmeniProfesoraForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniRadForma.resx">
+      <DependentUpon>IzmeniRadForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniSpisakWeba.resx">
+      <DependentUpon>IzmeniSpisakWeba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniStudentaForma.resx">
+      <DependentUpon>IzmeniStudentaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniTeoPojForma.resx">
+      <DependentUpon>IzmeniTeoPojForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniTeorijskiGrupForma.resx">
+      <DependentUpon>IzmeniTeorijskiGrupForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniWebForma.resx">
+      <DependentUpon>IzmeniWebForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\OdaberiKakavProjekat.resx">
+      <DependentUpon>OdaberiKakavProjekat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PojPrakForma.resx">
+      <DependentUpon>PojPrakForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ProfesoriForma.resx">
+      <DependentUpon>ProfesoriForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ProjektiForm.resx">
+      <DependentUpon>ProjektiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\StudentiNaProjektuForma.resx">
+      <DependentUpon>StudentiNaProjektuForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\SviPredmeti.resx">
+      <DependentUpon>SviPredmeti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\SviStudenti.resx">
+      <DependentUpon>SviStudenti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\TeorijskiGrupForma.resx">
+      <DependentUpon>TeorijskiGrupForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\UzeoPPPGForma.resx">
+      <DependentUpon>UzeoPPPGForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PocetnaStrana.resx">
+      <DependentUpon>PocetnaStrana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oracle.ManagedDataAccess.Client.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Wavy_Edu-02_Single-051.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slika.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets'))" />
+  </Target>
+</Project>

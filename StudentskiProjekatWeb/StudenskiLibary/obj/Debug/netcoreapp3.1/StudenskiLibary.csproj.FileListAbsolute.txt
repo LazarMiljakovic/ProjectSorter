@@ -1,0 +1,10 @@
+D:\Lazar\Baze Projekat\Projekat\WebApp\StudentskiProjekatWeb\StudenskiLibary\bin\Debug\netcoreapp3.1\StudenskiLibary.deps.json
+D:\Lazar\Baze Projekat\Projekat\WebApp\StudentskiProjekatWeb\StudenskiLibary\bin\Debug\netcoreapp3.1\StudenskiLibary.dll
+D:\Lazar\Baze Projekat\Projekat\WebApp\StudentskiProjekatWeb\StudenskiLibary\bin\Debug\netcoreapp3.1\StudenskiLibary.pdb
+D:\Lazar\Baze Projekat\Projekat\WebApp\StudentskiProjekatWeb\StudenskiLibary\obj\Debug\netcoreapp3.1\StudenskiLibary.csproj.AssemblyReference.cache
+D:\Lazar\Baze Projekat\Projekat\WebApp\StudentskiProjekatWeb\StudenskiLibary\obj\Debug\netcoreapp3.1\StudenskiLibary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lazar\Baze Projekat\Projekat\WebApp\StudentskiProjekatWeb\StudenskiLibary\obj\Debug\netcoreapp3.1\StudenskiLibary.AssemblyInfoInputs.cache
+D:\Lazar\Baze Projekat\Projekat\WebApp\StudentskiProjekatWeb\StudenskiLibary\obj\Debug\netcoreapp3.1\StudenskiLibary.AssemblyInfo.cs
+D:\Lazar\Baze Projekat\Projekat\WebApp\StudentskiProjekatWeb\StudenskiLibary\obj\Debug\netcoreapp3.1\StudenskiLibary.csproj.CoreCompileInputs.cache
+D:\Lazar\Baze Projekat\Projekat\WebApp\StudentskiProjekatWeb\StudenskiLibary\obj\Debug\netcoreapp3.1\StudenskiLibary.dll
+D:\Lazar\Baze Projekat\Projekat\WebApp\StudentskiProjekatWeb\StudenskiLibary\obj\Debug\netcoreapp3.1\StudenskiLibary.pdb

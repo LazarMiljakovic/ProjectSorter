@@ -1,0 +1,290 @@
+INSERT INTO PREDMET (Sifra, ImePredmeta, Semestar)
+VALUES (1, 'OOProj', 4);
+INSERT INTO PREDMET (Sifra, ImePredmeta, Semestar)
+VALUES (2, 'WEBP', 5);
+INSERT INTO PREDMET (Sifra, ImePredmeta, Semestar)
+VALUES (3, 'OS', 5);
+INSERT INTO PREDMET (Sifra, ImePredmeta, Semestar)
+VALUES (4, 'SWE', 6);
+
+INSERT INTO PREDMET_NASTAVNICI (SifraPredmeta, Nastavnik)
+VALUES (1, 'Milutin Zdravkovic');
+INSERT INTO PREDMET_NASTAVNICI (SifraPredmeta, Nastavnik)
+VALUES (1, 'Aleksandar Drazic');
+INSERT INTO PREDMET_NASTAVNICI (SifraPredmeta, Nastavnik)
+VALUES (2, 'Nikola Colic');
+INSERT INTO PREDMET_NASTAVNICI (SifraPredmeta, Nastavnik)
+VALUES (3, 'Ratko Mitrovic');
+INSERT INTO PREDMET_NASTAVNICI (SifraPredmeta, Nastavnik)
+VALUES (4, 'Stefan Radosavljevic');
+
+INSERT INTO IZVESTAJI (BrojIzvestaja)
+VALUES (1);
+INSERT INTO IZVESTAJI (BrojIzvestaja)
+VALUES (2);
+INSERT INTO IZVESTAJI (BrojIzvestaja)
+VALUES (1);
+INSERT INTO IZVESTAJI (BrojIzvestaja)
+VALUES (3);
+
+INSERT INTO IZVESTAJ (GrupaI,Sadrzaj,Odnos)
+VALUES (1,'Problem sa logovanjem','log.h/Linija 6');
+INSERT INTO IZVESTAJ (GrupaI,Sadrzaj,Odnos)
+VALUES (2,'Uspesno sredjen profil','rlclass.h');
+INSERT INTO IZVESTAJ (GrupaI,Sadrzaj,Odnos)
+VALUES (2,'Bezuspesan pokusaj konektovanja na server','server.cs');
+INSERT INTO IZVESTAJ (GrupaI,Sadrzaj,Odnos)
+VALUES (3,'Nicim izazvana greska','smpot.asm');
+INSERT INTO IZVESTAJ (GrupaI,Sadrzaj,Odnos)
+VALUES (4,'Algoritam za izracuvananje uspesno savladan','misces.sys');
+INSERT INTO IZVESTAJ (GrupaI,Sadrzaj,Odnos)
+VALUES (4,'Greska u petlji','modem.f');
+INSERT INTO IZVESTAJ (GrupaI,Sadrzaj,Odnos)
+VALUES (4,'Prepreka u resavanju WDBS-a','connect.cpp');
+
+
+
+INSERT INTO PROJEKAT (Identifikator, ImeProjekta, Pocetak, Sifra)
+VALUES (1, 'TaxiApp',DATE '2016-01-12',4);
+INSERT INTO PROJEKAT (Identifikator, ImeProjekta, Pocetak, Sifra)
+VALUES (2, 'EclipseLite',DATE '2017-02-24',1);
+INSERT INTO PROJEKAT (Identifikator, ImeProjekta, Pocetak, Sifra)
+VALUES (3, 'Stremio',DATE '2018-06-05',2);
+INSERT INTO PROJEKAT (Identifikator, ImeProjekta, Pocetak, Sifra)
+VALUES (4, 'APXOS',DATE '2011-08-10',3);
+INSERT INTO PROJEKAT (Identifikator, ImeProjekta, Pocetak, Sifra)
+VALUES (5, 'VisualStudioMobile',DATE '2020-11-18',1);
+INSERT INTO PROJEKAT (Identifikator, ImeProjekta, Pocetak, Sifra)
+VALUES (6, 'Medal of Honor',DATE '2014-05-25',4);
+INSERT INTO PROJEKAT (Identifikator, ImeProjekta, Pocetak, Sifra)
+VALUES (7, 'Teller',DATE '2015-04-27',2);
+INSERT INTO PROJEKAT (Identifikator, ImeProjekta, Pocetak, Sifra)
+VALUES (8, 'Pert',DATE '2021-10-28',3);
+
+
+INSERT INTO POJEDINACNI (Identifikator)
+VALUES (2);
+INSERT INTO POJEDINACNI (Identifikator)
+VALUES (4);
+INSERT INTO POJEDINACNI (Identifikator)
+VALUES (6);
+INSERT INTO POJEDINACNI (Identifikator)
+VALUES (8);
+
+INSERT INTO GRUPNI (Identifikator)
+VALUES (1);
+INSERT INTO GRUPNI (Identifikator)
+VALUES (3);
+INSERT INTO GRUPNI (Identifikator)
+VALUES (5);
+INSERT INTO GRUPNI (Identifikator)
+VALUES (7);
+
+
+INSERT INTO PRAKTICNI_POJEDINACNI (Identifikator, KratakOpis, PreporuceniJezik,GrupaIzvestaja)
+VALUES ( 2, 'Lite verzija Eclipsa','Java',1);
+INSERT INTO PRAKTICNI_POJEDINACNI (Identifikator, KratakOpis, PreporuceniJezik,GrupaIzvestaja)
+VALUES ( 4, 'Verzija OS za pametne televizore','C#',2);
+
+INSERT INTO PRAKTICNI_POJEDINACNI_SPISAKWEB( Identifikator, WebStranica)
+VALUES ( 2, 'www.liteversion.com');
+INSERT INTO PRAKTICNI_POJEDINACNI_SPISAKWEB( Identifikator, WebStranica)
+VALUES ( 4, 'www.eacck.rs');
+INSERT INTO PRAKTICNI_POJEDINACNI_SPISAKWEB( Identifikator, WebStranica)
+VALUES ( 2, 'www.telesoft.uk.co');
+INSERT INTO PRAKTICNI_POJEDINACNI_SPISAKWEB( Identifikator, WebStranica)
+VALUES ( 4, 'www.micosr.ty');
+
+INSERT INTO PRAKTICNI_GRUPNI ( Identifikator, KratakOpis, PreporuceniJezik,GrupaIzvestaja)
+VALUES ( 1, 'Igrica za Windows platformu','Unity',3);
+INSERT INTO PRAKTICNI_GRUPNI ( Identifikator, KratakOpis, PreporuceniJezik,GrupaIzvestaja)
+VALUES ( 3, 'Verzija OS za racunare u poslugama','ASM',4);
+
+INSERT INTO PRAKTICNI_GRUPNI_SPISAKWEB ( Identifikator, WebStranica)
+VALUES ( 1, 'www.brokesix.com');
+INSERT INTO PRAKTICNI_GRUPNI_SPISAKWEB ( Identifikator, WebStranica)
+VALUES ( 1, 'www.reakscz.rs');
+INSERT INTO PRAKTICNI_GRUPNI_SPISAKWEB ( Identifikator, WebStranica)
+VALUES ( 3, 'www.pilics.uk.co');
+INSERT INTO PRAKTICNI_GRUPNI_SPISAKWEB ( Identifikator, WebStranica)
+VALUES ( 3, 'www.ostaqpf.ty');
+
+INSERT INTO TEORIJSKI_POJEDINACNI ( Identifikator, MaxbrojStranica)
+VALUES ( 6, 19);
+INSERT INTO TEORIJSKI_POJEDINACNI ( Identifikator, MaxbrojStranica)
+VALUES ( 8, 12);
+
+INSERT INTO TEORIJSKI_GRUPNI (Identifikator, MaxbrojStranica)
+VALUES ( 5, 51);
+INSERT INTO TEORIJSKI_GRUPNI (Identifikator, MaxbrojStranica)
+VALUES ( 7, 72);
+
+
+INSERT INTO LITERATURA (IDM)
+VALUES (1);
+INSERT INTO LITERATURA (IDM)
+VALUES (2);
+INSERT INTO LITERATURA (IDM)
+VALUES (3);
+INSERT INTO LITERATURA (IDM)
+VALUES (4);
+INSERT INTO LITERATURA (IDM)
+VALUES (5);
+INSERT INTO LITERATURA (IDM)
+VALUES (6);
+
+INSERT INTO KORISTIPOJ (TEOR,LITERATURA)
+VALUES (6,1);
+INSERT INTO KORISTIPOJ (TEOR,LITERATURA)
+VALUES (6,2);
+INSERT INTO KORISTIPOJ (TEOR,LITERATURA)
+VALUES (8,3);
+INSERT INTO KORISTIPOJ (TEOR,LITERATURA)
+VALUES (8,4);
+
+INSERT INTO KORISTIGRUP (TEOR,LITERATURA)
+VALUES (5,1);
+INSERT INTO KORISTIGRUP (TEOR,LITERATURA)
+VALUES (7,6);
+INSERT INTO KORISTIGRUP (TEOR,LITERATURA)
+VALUES (5,3);
+INSERT INTO KORISTIGRUP (TEOR,LITERATURA)
+VALUES (7,5);
+
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Maksim Firtes',1);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Labando Sific',2);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Marko Frido',3);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Patrik Virgo',4);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Elando Kerza',5);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Keri Atilson',6);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Palando Dola',1);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Simon Markez',1);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Zero Pmeni',2);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Mirko Pavic',4);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Danko Rakic',5);
+INSERT INTO AUTOR (Ime_Prezime,LITERATURE)
+VALUES ('Pjano Vicse',4);
+
+
+
+
+INSERT INTO RADOVI (ID,Naziv, Konferencija,Adresa,Formatt)
+VALUES (1,'Operativni sistemi napredno','Los Andjeles','Sveta Petka','.docx');
+INSERT INTO RADOVI (ID,Naziv, Konferencija,Adresa,Formatt)
+VALUES (2,'Mobilne forme','Las Vegas','Olcat 1','.pdf');
+
+
+
+INSERT INTO CLANCI (ID, Naziv, Broj,Godina,ISSN)
+VALUES (3,'Diagram planiranja',14,2003,11224);
+INSERT INTO CLANCI (ID, Naziv, Broj,Godina,ISSN)
+VALUES (4,'Kompijuterski svet',21,2006,5122);
+
+
+
+INSERT INTO KNJIGA (ID,  Naziv, Izdavac,ISBN,GodinaIzdanja)
+VALUES (5,'Gejming','Marko Pjero',2155,2015);
+INSERT INTO KNJIGA (ID,  Naziv, Izdavac,ISBN,GodinaIzdanja)
+VALUES (6,'Java napredni nivo','Cile Perovic',6511,2012);
+
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(1,1,NULL,1);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(2,1,NULL,NULL);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(3,NULL,2,NULL);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(4,NULL,1,1);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(5,2,1,NULL);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(6,2,1,NULL);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(7,NULL,NULL,2);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(8,NULL,NULL,NULL);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(9,NULL,2,NULL);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(10,NULL,2,1);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(11,NULL,NULL,2);
+INSERT INTO NAPISAO(Autor,Rad,Clanak,Knjiga)
+VALUES(12,NULL,2,NULL);
+
+
+
+
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (17796, 'Lazar', 'Predrag','Miljakovic','RII');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (15024, 'Petar', 'Mile','Petrovic','ELE');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (10951, 'Bozidar', 'Smiljka','Perovic','TEL');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (23409, 'Milenko', 'Djordje','Radosavljevic','RII');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (15323, 'Mirko', 'Petar','Ciric','US');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (12552, 'Ana', 'Aleksa','Vlatkovic','ELE');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (16231, 'Andjela', 'Zeljko','Valjevic','US');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (19230, 'Mirjana', 'Mitar','Miljkovic','TEL');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (18990, 'Marija', 'Emir','Mitic','MS');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (21976, 'Ruza', 'Filip','Alkovic','MS');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (9239, 'Milena', 'Veljko','Milic','RII');
+INSERT INTO STUDENT (Indeks, Ime, ImeRoditelja,Prezime,Smer)
+VALUES (19052, 'Petra', 'Dusan','Nikolic','RII');
+
+
+
+
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-01-06',DATE'2022-03-01',DATE'2022-02-06',1,17796);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-01-09',DATE'2022-02-04', NULL,2,15024);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-01-16',DATE'2022-05-30',DATE'2022-03-21',3,10951);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-01-14',DATE'2022-04-27',NULL,4,23409);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-01-22',DATE'2022-07-25',NULL,5,15323);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-01-28',DATE'2022-08-12',DATE'2022-06-11',6,12552);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-02-06',DATE'2022-05-16',NULL,7,16231);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-02-10',DATE'2022-03-21',NULL,8,19230);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-02-11',DATE'2022-06-17',DATE'2022-04-17',1,18990);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-03-02',DATE'2022-04-12',NULL,3,21976);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-04-01',DATE'2022-05-01',DATE'2022-04-18',5,9239);
+INSERT INTO UZEO_PROJEKAT ( DatumIzabira, Rok,DatumZavrsetka,IDProj,Indeks)
+VALUES (DATE'2022-05-08',DATE'2023-08-06',NULL,7,19052);
+
+INSERT INTO UZEOPP ( Identifikator,ProgramskiJezik, Datum,UzeoP)
+VALUES (2,'C#',DATE '2022-01-01',2);
+INSERT INTO UZEOPP (Identifikator, ProgramskiJezik, Datum,UzeoP)
+VALUES (4,'C#',DATE '2021-06-01',4);
+
+INSERT INTO UZEOPG ( Identifikator,ProgramskiJezik,Izvestaj, Datum,UzeoP)
+VALUES (1,'Asm','poteskoce sa dibagerom',DATE '2022-01-01',1);
+INSERT INTO UZEOPG (Identifikator, ProgramskiJezik,Izvestaj ,Datum,UzeoP)
+VALUES (3,'C++','TeskDebit',DATE '2024-01-11',3);
